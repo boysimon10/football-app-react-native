@@ -10,7 +10,7 @@ export default function HeaderComponent() {
           <Text className="ml-2 font-bold text-2xl">XtraFoot</Text>
         </View>
         <View className="flex-row">
-          <TouchableOpacity className="bg-white shadow  rounded-full p-2 mr-3">
+          <TouchableOpacity className="bg-white shadow-md  rounded-full p-2 mr-3">
             <MagnifyingGlassIcon size={25} color="#000"/>
           </TouchableOpacity>
           <TouchableOpacity className="bg-white shadow-md  rounded-full p-2">
