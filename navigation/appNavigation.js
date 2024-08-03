@@ -1,19 +1,19 @@
-/*import { View, Text } from 'react-native'
+import { View, Text } from 'react-native'
 import React from 'react'
 import { NavigationContainer } from '@react-navigation/native';
 import { createNativeStackNavigator } from '@react-navigation/native-stack';
 import HomeScreen from '../screens/HomeScreen';
-import StoreScreen from '../screens/StoreScreen';
+import MatchDetailsScreen from '../screens/MatchDetailsScreen';
 const Stack = createNativeStackNavigator();
 
 
 export default function AppNavigation() {
   return (
     <NavigationContainer>
-      <Stack.Navigator initialRouteName='Store'>
+      <Stack.Navigator initialRouteName='Home'>
         <Stack.Screen name="Home" options={{headerShown: false}} component={HomeScreen} />
-        <Stack.Screen name="Store" options={{headerShown: false}} component={StoreScreen} />
+        <Stack.Screen name="MatchDetails" options={{headerShown: false}} component={MatchDetailsScreen} />
       </Stack.Navigator>
     </NavigationContainer>
   )
-}*/
+}

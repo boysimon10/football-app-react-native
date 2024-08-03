@@ -1,13 +1,16 @@
 import { Text, View, TouchableOpacity, ScrollView, Image } from "react-native";
+import { useLinkTo } from '@react-navigation/native';
 import ScoreCardComponent from "./ScoreCardComponent";
 import MatchCardComponent from "./MatchCardComponent";
 
 export default function BodyComponent() {
+  const linkTo = useLinkTo();
+
   return (
     <View className="mb-[175px]">
-      <View className="bg-gray-50">
+      <View className="">
         <View className="mt-2 mx-4">
-          <Text className="font-bold text-xl">Derniers Match</Text>
+          <Text className="font-bold text-xl">Derniers Matchs</Text>
         </View>
         <View className="">
           <ScrollView horizontal showsHorizontalScrollIndicator={false}>
@@ -24,9 +27,12 @@ export default function BodyComponent() {
         </View>
       </View>
       <View className="m-4">
-        <View className="mb-4">
+            <TouchableOpacity className="mb-4" onPress={() => linkTo('/MatchDetails')}>
+              <MatchCardComponent />
+            </TouchableOpacity>
+        <TouchableOpacity onPress={() => linkTo('/MatchDetails')} className="mb-4">
           <MatchCardComponent />
-        </View>
+        </TouchableOpacity>
         <View className="mb-4">
           <MatchCardComponent />
         </View>

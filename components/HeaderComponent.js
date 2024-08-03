@@ -7,7 +7,7 @@ export default function HeaderComponent() {
       <View className="m-4 flex-row items-center justify-between">
         <View className="flex-row">
           <Image source={require("../assets/ball.png")} className="w-8 h-8" />
-          <Text className="ml-2 font-bold text-2xl">XtraFoot</Text>
+          <Text className="ml-2 font-bold text-2xl">Football</Text>
         </View>
         <View className="flex-row">
           <TouchableOpacity className="bg-white shadow-md  rounded-full p-2 mr-3">

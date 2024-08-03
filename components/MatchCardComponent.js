@@ -8,7 +8,7 @@ export default function MatchCardComponent() {
         <Text className=" font-semibold">
           Premier League • 08/08/2024
         </Text>
-          <Text className=" text-red-500 font-semibold">90'</Text>
+          <Text className=" text-red-500 text-xs font-semibold">FULL-TIME</Text>
       </View>
       <View className="flex flex-row justify-center mx-4">
         <View className="h-px bg-gray-200 w-full"></View>
