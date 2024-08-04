@@ -7,7 +7,7 @@ export default function BodyComponent() {
   const linkTo = useLinkTo();
 
   return (
-    <View className="mb-[175px]">
+    <View className="mb-[175px] bg-white">
       <View className="">
         <View className="mt-2 mx-4">
           <Text className="font-bold text-xl">Derniers Matchs</Text>
